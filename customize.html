@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <!-- Basic -->
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <!-- Mobile Metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <!-- Site Metas -->
+      <meta name="keywords" content="" />
+      <meta name="description" content="" />
+      <meta name="author" content="" />
+      <link rel="shortcut icon" href="images/favicon.png" type="">
+      <title>JoyHas - Fashion HTML Template</title>
+      <!-- bootstrap core css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+      <!-- font awesome style -->
+      <link href="css/font-awesome.min.css" rel="stylesheet" />
+      <!-- Custom styles for this template -->
+      <link href="css/style.css" rel="stylesheet" />
+      <!-- responsive style -->
+      <link href="css/responsive.css" rel="stylesheet" />
+	      <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+	<link href="https://fonts.googleapis.com/css2?family=Merienda&amp;display=swap" rel="stylesheet">
+	 <!-- jQery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script>
+
+$.ajax({
+    url: 'header.html',
+    dataType: 'JSONP',
+    jsonpCallback: 'test',
+    type: 'GET',
+    success: function (data) {
+        console.log(data);
+    }
+});
+function test(){
+	console.log("sdf");
+}
+	$(function(){
+	  //$("#dyn_header").load("header.html"); 
+	  //$("#dyn_footer").load("footer.html");
+		var path = window.location.pathname;
+		var page = path.split("/").pop();
+		if(page == "customize.html"){
+			//$(".navbar li ").removeClass("active");
+			$( ".navbar li:nth-child(3)").addClass("active");
+		}	  
+	});
+	</script>
+
+
+
+   </head>
+   <body>
+      <div class="hero_area" id="dyn_header">
+         
+</div>
+ <!-- inner page section -->
+      <section class="inner_page_head">
+         <div class="container_fuild">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="full">
+                     <h3>Customize</h3>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end inner page section -->
+<section class="arrival_section" style="background-color:#fff;">
+	 <div class="container">
+		<div class="box">
+		
+		<div class="row">
+      <div class="col-md-6 col-lg-6">
+        <div id="tshirt-div">
+                            <!-- 
+                                Initially, the image will have the background tshirt that has transparency
+                                So we can simply update the color with CSS or JavaScript dinamically
+                            -->
+                            <div id= "tshirt-backgroundpicture">
+                                <img id="tshirt-backgroundpicture1" src="images/background_tshirt.png" width="100%" />
+								<center>
+							<h6 class="product_title">Kid's Round-Neck T-Shirt</h6>
+							</center>
+                            </div>
+                            <div id="drawingArea" class="drawing-area">					
+                                <div class="canvas-container">
+                                    <canvas id="tshirt-canvas" width="400" height="400"></canvas>
+                                </div>
+								
+                            </div> 
+							
+							<div class="row">
+							<p class="divider-text"><span>Add Design</span></p>
+								<div class="col-md-2 tshirt-logos">
+									<img src="images/logo1.png" onclick="addLogo('images/logo1.png')" width="50" height="40"/>
+								</div>
+								<div class="col-md-2 tshirt-logos">
+									<img id="tshirt-design" src="images/logo2.png" onclick="addLogo('images/logo2.png')" width="50" height="40"/>
+								</div>
+								<div class="col-md-2 tshirt-logos">
+									<img id="tshirt-design" src="images/logo3.png" onclick="addLogo('images/logo3.png')" width="50" height="40"/>
+								</div>
+								<div class="col-md-2 tshirt-logos">
+									<img id="tshirt-design" src="images/logo4.png" onclick="addLogo('images/logo4.png')" width="50" height="40"/>
+								</div>
+								<div class="col-md-2 tshirt-logos">
+									<img id="tshirt-design" src="images/logo5.png" onclick="addLogo('images/logo5.png')" width="50" height="40"/>
+								</div>
+								<div class="col-md-2 tshirt-logos">
+									<img id="tshirt-design" src="images/logo6.png" onclick="addLogo('images/logo6.png')" width="50" height="40"/>
+								</div>
+								<div class="col-md-2 tshirt-logos">
+									<img id="tshirt-design" src="images/logo7.png" onclick="addLogo('images/logo7.png')" width="50" height="40"/>
+								</div>
+								<div class="col-md-2 tshirt-logos">
+									<img id="tshirt-design" src="images/logo8.png" onclick="addLogo('images/logo8.png')" width="50" height="40"/>
+								</div>
+								<div class="col-md-2 tshirt-logos">
+									<button type="button" class="btn btn-dark btn-sm" onclick="getFile()"><span class="fa fa-upload"> Upload</span></button>
+									<input type="file" id="tshirt-custompicture" />
+								</div>
+							</div>
+							
+                        </div>
+      </div>
+	  <div class="col-md-6 col-lg-6">
+	  <h2 class="product_title">Kid's Round-Neck T-Shirt</h2>
+<i>Joyhas</i>
+<div id="product_description">
+<li>100% Premium Soft Cotton</li>
+<li>Pre-Shrunk</li>
+<li>Non-tubular (with side seams for better fit and durability)</li>
+<li>Printed back neck label for comfort</li>
+<li>American Standard Kids Fit
+</div>
+
+<p class="divider-text" id="btn-color-container"><span>Colour</span></p>
+                            <button type="button" class="btn btn-dark btn-sm btn-tshirt-color" onclick="updateTshirtColor('images/background_tshirt.png')"><span class="fa fa-user-o"></span></button>
+                            <button type="button" class="btn btn-danger btn-sm btn-tshirt-color" onclick="updateTshirtColor('images/red.png')"><span class="fa fa-user-o"></span></button>
+							<button type="button" class="btn btn-primary btn-sm btn-tshirt-color" onclick="updateTshirtColor('images/blue.png')"><span class="fa fa-user-o"></span></button>
+							<button type="button" class="btn btn-success btn-sm btn-tshirt-color" onclick="updateTshirtColor('images/green.png')"><span class="fa fa-user-o"></span></button>
+							<p class="divider-text"><span>Text</span></p>
+							<button type="button" class="btn btn-dark btn-sm" id="tshirt-text" onclick="fun()"><span class="fa fa-pencil-square-o"></span></button>
+							<button type="button" class="btn btn-primary btn-sm btn-font-color" onclick="updateTextColor('#0d6efd')"><span class="fa fa-font"></span></button>
+                            <button type="button" class="btn btn-secondary btn-sm btn-font-color" onclick="updateTextColor('#6c757d')"><span class="fa fa-font"></span></button>
+							<button type="button" class="btn btn-success btn-sm btn-font-color" onclick="updateTextColor('#28a745')"><span class="fa fa-font"></span></button>
+							<button type="button" class="btn btn-danger btn-sm btn-font-color" onclick="updateTextColor('#dc3545')"><span class="fa fa-font"></span></button>
+							<button type="button" class="btn btn-warning btn-sm btn-font-color" onclick="updateTextColor('#ffc107')"><span class="fa fa-font"></span></button>
+							<button type="button" class="btn btn-info btn-sm btn-font-color" onclick="updateTextColor('#17a2b8')"><span class="fa fa-font"></span></button>
+							<button type="button" class="btn btn-light btn-sm btn-font-color" onclick="updateTextColor('#f8f9fa')"><span class="fa fa-font"></span></button>
+							<button type="button" class="btn btn-dark btn-sm btn-font-color" onclick="updateTextColor('#343a40')"><span class="fa fa-font"></span></button>
+                           <p class="divider-text"><span>Font</span></p>
+						   <button type="button" class="btn btn-dark btn-sm btn-font-family" style="font-family:Times New Roman;" onclick="updateTextFont('Times New Roman')">Font</button>
+						   <button type="button" class="btn btn-dark btn-sm btn-font-family" style="font-family:Arial;" onclick="updateTextFont('Arial')">Font</button>
+						   <button type="button" class="btn btn-dark btn-sm btn-font-family" style="font-family:fantasy;" onclick="updateTextFont('fantasy')">Font</button>
+						   <button type="button" class="btn btn-dark btn-sm btn-font-family" style="font-family:cursive;" onclick="updateTextFont('cursive')">Font</button>
+						   <button type="button" class="btn btn-dark btn-sm btn-font-family" style="font-family:Merienda;" onclick="updateTextFont('Merienda')">Font</button>
+						   <button type="button" class="btn btn-dark btn-sm btn-font-family" style="font-family:sans-serif;" onclick="updateTextFont('sans-serif')">Font</button>
+						   <p class="divider-text"><span>Delivery Address</span></p>
+						   <form class="needs-validation" novalidate="">
+          <div class="row g-3">
+            <div class="col-sm-4 col-xs-6">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+            </div>
+
+            <div class="col-sm-4 col-xs-6">
+              <label for="phone" class="form-label">Phone</label>
+              <input type="text" class="form-control" id="phone" placeholder="971 500000000" value="" required="">
+            </div>
+
+            <div class="col-sm-4 col-xs-6">
+              <label for="address" class="form-label">Address</label>
+              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+            </div>
+			
+			<div class="col-sm-4 col-xs-6">
+              <label for="tshirt-size" class="form-label">Size</label>
+			  <select id="tshirt-size" name="tshirt-size" class="form-control">
+				<option value="size-s" selected>Size : S (80cm - 85cm)</option>
+				<option value="size-m" selected>Size : M (90cm - 95cm)</option>
+				<option value="size-l" selected>Size : L (100cm - 105cm)</option>
+				<option value="size-xl" selected>Size : XL (110cm - 115cm)</option>
+				<option value="size-xxl" selected>Size : XXL (120cm - 130cm)</option>
+
+			  </select>
+            </div>
+
+            <div class="col-sm-4 col-xs-6">
+              <label for="quantity" class="form-label">Quantity</label>
+              <input type="number" class="form-control" id="quantity" placeholder="5" min="1" max="1000" value="1" required="" onkeydown="return false" value="1" onchange="numberValueChange(this)" >
+            </div>
+
+			
+			
+
+			
+			<div class="col-sm-4 col-xs-6">
+              <label for="zip" class="form-label">Promo Code</label>
+              <input type="text" class="form-control" placeholder="Promo code" value="T2024">
+            </div>
+          </div>
+		  <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Kid's Round-Neck T-Shirt</h6>
+                <small class="text-muted">T-Shirt</small>
+              </div>
+              <span class="text-muted" id="product_price">50</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-light">
+              <div class="text-success">
+                <h6 class="my-0">Promo code</h6>
+                <small>T2024 (<span id="discount_label">30%</span> Discount)</small>
+              </div>
+              <span class="text-success" id="discount">-15</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total (AED)</span>
+              <strong id="total_price">35</strong>
+            </li>
+          </ul>
+			
+          <hr class="my-4">
+
+          <input class="btn btn-success btn-block text-center" type="button" style="display:block;" value="Submit" onclick="uploadCanvas()"/>
+        </form>
+</div>
+    </div>
+		
+		</div>
+	</div>
+</section>
+
+      <!-- footer start -->
+      <footer class="footer_section" id="dyn_footer">
+         
+      </footer>
+      <!-- footer end -->
+      <div class="cpy_">
+         <p class="mx-auto">© 2024 All Rights Reserved By JoyHas</p>
+      </div>
+	 
+		<!-- custom js -->
+	<script src="js/custom.js"></script>
+      <!-- popper js -->
+      <script src="js/popper.min.js"></script>
+      <!-- bootstrap js -->
+      <script src="js/bootstrap.js"></script>
+      
+	  <!-- Include Fabric.js in the page -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/510/fabric.min.js"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+	 <script>
+var product_price = 0;
+var discount = 0;
+var product = getUrlParameter('product');
+var tmp_data =[];
+	for (var i = 0; i < database.products.length; i++){
+	  if(database.products[i].id == product){
+	  if(database.products[i].images[0]){
+	  var tmp_images=[];
+	  for (var j = 0; j < database.products[i].images.length; j++){
+			 tmp_images.push(database.products[i].images[j]);
+		}
+		tmp_data['images'] = tmp_images;
+	  }
+	  tmp_data['title'] = database.products[i].title;
+	  tmp_data['description'] = database.products[i].description;
+	  tmp_data['price'] = database.products[i].price;
+	  tmp_data['discountPercentage'] = database.products[i].discountPercentage;
+	  product_price = database.products[i].price;
+	  discount = database.products[i].discountPercentage;
+	  }
+	  
+	}
+	  </script>
+	<script>
+            
+            let canvas = new fabric.Canvas('tshirt-canvas');
+			document.querySelectorAll('.btn-font-family').forEach(item => {
+			  item.disabled=true;
+			});
+			document.querySelectorAll('.btn-font-color').forEach(item => {
+			  item.disabled=true;
+			});
+            // When the user clicks on upload a custom picture
+            document.getElementById('tshirt-custompicture').addEventListener("change", function(e){
+                var reader = new FileReader();
+                
+                reader.onload = function (event){
+                    var imgObj = new Image();
+					imgObj.crossOrigin="Anonymous";
+                    imgObj.src = event.target.result;
+
+                    // When the picture loads, create the image in Fabric.js
+                    imgObj.onload = function () {
+                        var img = new fabric.Image(imgObj);
+						
+                        img.scaleToHeight(300);
+                        img.scaleToWidth(300); 
+						img.crossOrigin="Anonymous";
+                        canvas.centerObject(img);
+                        canvas.add(img);
+                        canvas.renderAll();
+                    };
+                };
+
+                // If the user selected a picture, load it
+                if(e.target.files[0]){
+                    reader.readAsDataURL(e.target.files[0]);
+                }
+            }, false);
+
+            // When the user selects a picture that has been added and press the DEL key
+            // The object will be removed !
+            document.addEventListener("keydown", function(e) {
+                var keyCode = e.keyCode;
+
+                if(keyCode == 46){
+                    console.log("Removing selected element on Fabric.js on DELETE key !");
+                    canvas.remove(canvas.getActiveObject());
+					document.querySelectorAll('.btn-font-family').forEach(item => {
+					  item.disabled=true;
+					});
+					document.querySelectorAll('.btn-font-color').forEach(item => {
+					  item.disabled=true;
+					});
+                }
+            }, false);
+			ajaxBtnColourButtons();
+				
+   
+    </script>
+	<script>
+function uploadCanvas() {
+  canvas.getElement().toBlob(function(blob) {
+	 var data=new FormData();
+		data.append("canvas", blob);
+		fetch("https://joyhas.000webhostapp.com/save-img.php", {method: 'post', body: data});
+	});
+}
+//const myTimeout = setTimeout(uploadCanvas, 5000);
+</script>
+   </body>
+</html>
