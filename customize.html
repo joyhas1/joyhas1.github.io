@@ -31,21 +31,17 @@
 
 $.ajax({
     url: 'header.html',
-    dataType: 'JSONP',
-    jsonpCallback: 'test',
     type: 'GET',
     success: function (data) {
         console.log(data);
     }
 });
-function test(){
-	console.log("sdf");
-}
 	$(function(){
 	  //$("#dyn_header").load("header.html"); 
 	  //$("#dyn_footer").load("footer.html");
 		var path = window.location.pathname;
 		var page = path.split("/").pop();
+		console.log(page);
 		if(page == "customize.html"){
 			//$(".navbar li ").removeClass("active");
 			$( ".navbar li:nth-child(3)").addClass("active");
