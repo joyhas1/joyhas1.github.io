@@ -1182,7 +1182,7 @@ form input[type="submit"]:focus {
 }
 .btn-tshirt-color{
 border-radius:50% !important;
-margin-right:20px !impirtant;
+margin-right:5px !important;
 }
 input[type="file"] {
   display: none;
