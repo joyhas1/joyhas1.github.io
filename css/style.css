@@ -1172,7 +1172,7 @@ form input[type="submit"]:focus {
 	z-index: 1;
 }
 .btn-font-color{
-	border-radius:100%;
+	border-radius:100% !important;
 }
 .btn-font-family{
 	/*border-radius:30%;*/
