@@ -28,24 +28,18 @@
 	 <!-- jQery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<script>
-
-$.ajax({
-    url: 'header.html',
-    type: 'GET',
-    success: function (data) {
-        console.log(data);
-    }
-});
 	$(function(){
-	  $("#dyn_header").load("header.html"); 
+		$('#dyn_header').load('header.html', function() {
+		    var path = window.location.pathname;
+			var page = path.split("/").pop();
+			if(page == "customize.html"){
+				//$(".navbar li ").removeClass("active");
+				$( ".navbar li:nth-child(3)").addClass("active");
+			}	
+		    //$(this).show();
+		});
 	  $("#dyn_footer").load("footer.html");
-		var path = window.location.pathname;
-		var page = path.split("/").pop();
-		console.log(page);
-		if(page == "customize.html"){
-			//$(".navbar li ").removeClass("active");
-			$( ".navbar li:nth-child(3)").addClass("active");
-		}	  
+		  
 	});
 	</script>
 
