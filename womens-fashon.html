@@ -20,45 +20,24 @@
       <link href="css/style.css" rel="stylesheet" />
       <!-- responsive style -->
       <link href="css/responsive.css" rel="stylesheet" />
+	    <!-- jQery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script>
+	$(function(){
+		$('#dyn_header').load('womens-fashon.html', function() {
+		    var path = window.location.pathname;
+			var page = path.split("/").pop();
+			if(page == "customize.html"){
+				$( ".navbar li:nth-child(2)").addClass("active");
+			}
+		});
+	  $("#dyn_footer").load("footer.html");  
+	});
+	</script>
    </head>
    <body class="sub_page">
-      <div class="hero_area">
-         <!-- header section strats -->
-         <header class="header_section">
-            <div class="container">
-               <nav class="navbar navbar-expand-lg custom_nav-container ">
-                  <a class="navbar-brand" href="index.html"><img width="100" src="images/logo.png" alt="#" /></a>
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class=""> </span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                     <ul class="navbar-nav">
-                        <li class="nav-item">
-                           <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                        </li>
-						<li class="nav-item dropdown active">
-                           <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Shop <span class="caret"></span></a>
-                           <ul class="dropdown-menu">
-                              <li><a href="mens-fashon.html">Mens</a></li>
-                              <li><a href="womens-fashon.html">Womens</a></li>
-							  <li><a href="kids-fashon.html">Kids</a></li>
-                           </ul>
-                        </li>
-						<li class="nav-item">
-                           <a class="nav-link" href="about.html">Services</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="about.html">About us</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                     </ul>
-                  </div>
-               </nav>
-            </div>
-         </header>
-         <!-- end header section -->
+      <div class="hero_area" id="dyn_header">
+        
       </div>
       <!-- inner page section -->
       <section class="inner_page_head">
@@ -392,88 +371,13 @@
       </section>
       <!-- end product section -->
       <!-- footer section -->
-      <footer class="footer_section">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-4">
-                   <div class="full">
-                      <div class="logo_footer">
-                        <a href="#"><img width="110" src="images/logo.png" alt="#" /></a>
-                      </div>
-                      <div class="information_f">
-                        <p><strong>ADDRESS:</strong> 28c Al Nahada, Dubai, UAE</p>
-                        <p><strong>TELEPHONE:</strong> +971 54 307 3470</p>
-                        <p><strong>EMAIL:</strong> hyperjoy89@gmail.com</p>
-                      </div>
-					  <div class="footer_social">
-                        <a href="">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                        </a>
-                        <a href="">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                        </a>
-                        <a href="">
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
-                        </a>
-                        <a href="">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                        </a>
-                        <a href="">
-                        <i class="fa fa-pinterest" aria-hidden="true"></i>
-                        </a>
-                     </div>
-                   </div>
-               </div>
-               <div class="col-md-8">
-                  <div class="row">
-                  <div class="col-md-7">
-                     <div class="row">
-                        <div class="col-md-6">
-                     <div class="widget_menu">
-                        <h3>Menu</h3>
-                        <ul>
-                           <li><a href="index.html">Home</a></li>
-                           <li><a href="about.html">About</a></li>
-                           <li><a href="contact.html">Contact</a></li>
-                           <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
-                           <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                        </ul>
-                     </div>
-					 
-                  </div>
-				  
-
-                     </div>
-                  </div>     
-                  <div class="col-md-5">
-                     <div class="widget_menu">
-                        <h3>Newsletter</h3>
-                        <div class="information_f">
-                          <p>Subscribe by our newsletter and get update protidin.</p>
-                        </div>
-                        <div class="form_sub">
-                           <form>
-                              <fieldset>
-                                 <div class="field">
-                                    <input type="email" placeholder="Enter Your Mail" name="email" />
-                                    <input type="submit" value="Subscribe" />
-                                 </div>
-                              </fieldset>
-                           </form>
-                        </div>
-                     </div>
-                  </div>
-                  </div>
-               </div>
-            </div>
-         </div>
+      <footer class="footer_section" id="dyn_footer">
+         
       </footer>
 	   <div class="cpy_">
          <p class="mx-auto">© 2024 All Rights Reserved By JoyHas</p>
       </div>
       <!-- footer section -->
-      <!-- jQery -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
       <!-- popper js -->
       <script src="js/popper.min.js"></script>
       <!-- bootstrap js -->
