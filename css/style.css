@@ -1181,7 +1181,8 @@ form input[type="submit"]:focus {
 	border-radius:30%;
 }
 .btn-tshirt-color{
-border-radius:50%;
+border-radius:50% !important;
+margin-right:20px !impirtant;
 }
 input[type="file"] {
   display: none;
