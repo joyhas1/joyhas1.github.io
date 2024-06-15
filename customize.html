@@ -272,6 +272,10 @@ var tmp_data =[];
 	<script>
             
             let canvas = new fabric.Canvas('tshirt-canvas');
+		var divHeight = $('#tshirt-backgroundpicture1').height();
+			var divWidth = $('#tshirt-backgroundpicture1').width();
+			canvas.setWidth(divWidth);
+			canvas.setHeight(divHeight);
 			document.querySelectorAll('.btn-font-family').forEach(item => {
 			  item.disabled=true;
 			});
