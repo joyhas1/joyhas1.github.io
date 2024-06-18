@@ -54,7 +54,6 @@
             </div>
          </div>
       </section>
-      <!-- end inner page section -->
 <section class="arrival_section" style="background-color:#fff;">
 	 <div class="container">
 		<div class="box">
@@ -82,38 +81,39 @@
 							<div class="row">
 							
 								<div class="col-2 col-sm-2 col-md-2 col-lg-2 tshirt-logos">
-									<img src="images/logo1.png" onclick="addLogo('images/logo1.png')" width="50" height="40"/>
+									<img class="tshirt-design img-responsive" src="images/logo1.png" onclick="addLogo('images/logo1.png')"/>
 								</div>
 								<div class="col-2 col-sm-2 col-md-2 col-lg-2 tshirt-logos">
-									<img id="tshirt-design" src="images/logo2.png" onclick="addLogo('images/logo2.png')" width="50" height="40"/>
+									<img class="tshirt-design img-responsive" src="images/logo2.png" onclick="addLogo('images/logo2.png')"/>
+								</div>
+								
+								<div class="col-2 col-sm-2 col-md-2 col-lg-2 tshirt-logos">
+									<img class="tshirt-design img-responsive" src="images/logo3.png" onclick="addLogo('images/logo3.png')"/>
 								</div>
 								<div class="col-2 col-sm-2 col-md-2 col-lg-2 tshirt-logos">
-									<img id="tshirt-design" src="images/logo3.png" onclick="addLogo('images/logo3.png')" width="50" height="40"/>
+									<img class="tshirt-design img-responsive" src="images/logo4.png" onclick="addLogo('images/logo4.png')"/>
 								</div>
 								<div class="col-2 col-sm-2 col-md-2 col-lg-2 tshirt-logos">
-									<img id="tshirt-design" src="images/logo4.png" onclick="addLogo('images/logo4.png')" width="50" height="40"/>
+									<img class="tshirt-design img-responsive" src="images/logo5.png" onclick="addLogo('images/logo5.png')"/>
 								</div>
 								<div class="col-2 col-sm-2 col-md-2 col-lg-2 tshirt-logos">
-									<img id="tshirt-design" src="images/logo5.png" onclick="addLogo('images/logo5.png')" width="50" height="40"/>
+									<img class="tshirt-design img-responsive" src="images/logo6.png" onclick="addLogo('images/logo6.png')"/>
 								</div>
 								<div class="col-2 col-sm-2 col-md-2 col-lg-2 tshirt-logos">
-									<img id="tshirt-design" src="images/logo6.png" onclick="addLogo('images/logo6.png')" width="50" height="40"/>
+									<img class="tshirt-design img-responsive" src="images/logo7.png" onclick="addLogo('images/logo7.png')"/>
 								</div>
 								<div class="col-2 col-sm-2 col-md-2 col-lg-2 tshirt-logos">
-									<img id="tshirt-design" src="images/logo7.png" onclick="addLogo('images/logo7.png')" width="50" height="40"/>
-								</div>
-								<div class="col-2 col-sm-2 col-md-2 col-lg-2 tshirt-logos">
-									<img id="tshirt-design" src="images/logo8.png" onclick="addLogo('images/logo8.png')" width="50" height="40"/>
+									<img class="tshirt-design img-responsive" src="images/logo8.png" onclick="addLogo('images/logo8.png')"/>
 								</div>
 								<div class="col-3 col-sm-2 col-md-2 col-lg-2 tshirt-logos">
-									<button type="button" class="btn btn-dark btn-sm" onclick="getFile()"><span class="fa fa-upload"> Upload</span></button>
+									<button type="button" class="btn btn-dark tshirt-design" onclick="getFile()"><span class="fa fa-upload"> Upload</span></button>
 									<input type="file" id="tshirt-custompicture" />
 								</div>
 							</div>
 							
                         </div>
       </div>
-	  <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+	  <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-center">
 	  
 
 <p class="divider-text" id="btn-color-container"><span>Colour</span></p>
@@ -138,15 +138,7 @@
 						   <button type="button" class="btn btn-dark btn-sm btn-font-family" style="font-family:cursive;" onclick="updateTextFont('cursive')">Font</button>
 						   <button type="button" class="btn btn-dark btn-sm btn-font-family" style="font-family:Merienda;" onclick="updateTextFont('Merienda')">Font</button>
 						   <button type="button" class="btn btn-dark btn-sm btn-font-family" style="font-family:sans-serif;" onclick="updateTextFont('sans-serif')">Font</button>
-		  <h2 class="product_title">Kid's Round-Neck T-Shirt</h2>
-<i>Joyhas</i>
-<div id="product_description">
-<li>100% Premium Soft Cotton</li>
-<li>Pre-Shrunk</li>
-<li>Non-tubular (with side seams for better fit and durability)</li>
-<li>Printed back neck label for comfort</li>
-<li>American Standard Kids Fit
-</div>
+
 						   <p class="divider-text"><span>Delivery Address</span></p>
 						   <form class="needs-validation" novalidate="">
           <div class="row g-3">
@@ -178,8 +170,8 @@
             </div>
 
             <div class="col-sm-4 col-xs-6">
-              <label for="quantity" class="form-label">Quantity</label>
-              <input inputmode="numeric" type="number" class="form-control" id="quantity" placeholder="5" min="1" max="1000" value="1" required="" value="1" onchange="numberValueChange(this)" >
+              <label for="quantity" class="form-label" id="test1">Quantity</label>
+              <input type="text" class="form-control" id="quantity" placeholder="5" min="1" max="1000" value="1" required="" >
             </div>
 
 			
@@ -190,8 +182,19 @@
               <label for="zip" class="form-label">Promo Code</label>
               <input type="text" class="form-control" placeholder="Promo code" value="T2024">
             </div>
+<div class="col-12 col-sm-12 col-md-12 col-lg-12 text-left">
+<h2 class="product_title">Kid's Round-Neck T-Shirt</h2>
+<i>Joyhas</i>
+<div id="product_description">
+<li>100% Premium Soft Cotton</li>
+<li>Pre-Shrunk</li>
+<li>Non-tubular (with side seams for better fit and durability)</li>
+<li>Printed back neck label for comfort</li>
+<li>American Standard Kids Fit
+</div>
+</div>
           </div>
-		  <ul class="list-group mb-3">
+		  <ul class="list-group mb-3 text-left">
             <li class="list-group-item d-flex justify-content-between lh-condensed">
               <div>
                 <h6 class="my-0">Kid's Round-Neck T-Shirt</h6>
@@ -215,6 +218,7 @@
           <hr class="my-4">
 
           <input class="btn btn-success btn-block text-center" type="button" style="display:block;" value="Submit" onclick="uploadCanvas()"/>
+		  <input class="btn btn-secondary btn-block text-center" type="button" style="display:block;" value="Reset" onclick="resetCanvas()"/>
         </form>
 </div>
     </div>
@@ -328,7 +332,18 @@ var tmp_data =[];
                 }
             }, false);
 			ajaxBtnColourButtons();
-				
+		function resetCanvas(){
+   canvas.clear();
+   document.querySelectorAll('.btn-font-family').forEach(item => {
+	  item.disabled=true;
+	});
+	document.querySelectorAll('.btn-font-color').forEach(item => {
+	  item.disabled=true;
+	});
+   $('body,html').animate({
+                scrollTop: 0
+            }, 400);
+   }		
    
     </script>
 	<script>
