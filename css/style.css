@@ -1173,9 +1173,10 @@ form input[type="submit"]:focus {
 }
 .btn-font-color{
 	border-radius:100% !important;
+	font-size: 1rem;
 }
 .btn-font-family{
-	/*border-radius:30%;*/
+	font-size: 1rem;
 }
 .btn-photo{
 	border-radius:30%;
@@ -1183,6 +1184,7 @@ form input[type="submit"]:focus {
 .btn-tshirt-color{
 border-radius:50% !important;
 margin-right:5px !important;
+font-size:1rem;
 }
 input[type="file"] {
   display: none;
@@ -1206,4 +1208,150 @@ margin: auto;
 }
 html {
   scroll-behavior: smooth;
+}
+.tshirt-design{
+	min-height:50px;
+	min-width:40px;
+	font-size:1rem;
+}
+#tshirt-text{
+	font-size:1rem;
+}
+@media (min-width:320px)  {
+	/* smartphones, iPhone, portrait 480x320 phones */ 
+	.tshirt-design{
+		min-height:20px;
+		min-width:10px;
+		font-size:10px;
+	}
+	.btn-tshirt-color{
+		border-radius:50% !important;
+		margin-right:5px !important;
+		font-size:10px;
+	}
+	#tshirt-text{
+		font-size:10px;
+	}
+	.btn-font-color{
+		border-radius:100% !important;
+		font-size: 10px;
+	}
+	.btn-font-family{
+		font-size: 10px;
+	}
+}
+@media (min-width:481px)  {
+	/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+	.tshirt-design{
+		min-height:50px;
+		min-width:40px;
+		font-size:1rem;
+	}
+	.btn-tshirt-color{
+		border-radius:50% !important;
+		margin-right:5px !important;
+		font-size:1rem;
+	}
+	#tshirt-text{
+		font-size:1rem;
+	}
+	.btn-font-color{
+		border-radius:100% !important;
+		font-size: 1rem;
+	}
+	.btn-font-family{
+		font-size: 1rem;
+	}
+}
+@media (min-width:641px)  {
+	/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+	.tshirt-design{
+		min-height:50px;
+		min-width:40px;
+		font-size:1rem;
+	}
+	.btn-tshirt-color{
+		border-radius:50% !important;
+		margin-right:5px !important;
+		font-size:1rem;
+	}
+	#tshirt-text{
+		font-size:1rem;
+	}
+	.btn-font-color{
+		border-radius:100% !important;
+		font-size: 1rem;
+	}
+	.btn-font-family{
+		font-size: 1rem;
+	}
+}
+@media (min-width:961px)  {
+	/* tablet, landscape iPad, lo-res laptops ands desktops */
+	.tshirt-design{
+		min-height:50px;
+		min-width:40px;
+		font-size:1rem;
+	}
+	.btn-tshirt-color{
+		border-radius:50% !important;
+		margin-right:5px !important;
+		font-size:1rem;
+	}
+	#tshirt-text{
+		font-size:1rem;
+	}
+	.btn-font-color{
+		border-radius:100% !important;
+		font-size: 1rem;
+	}
+	.btn-font-family{
+		font-size: 1rem;
+	}
+}
+@media (min-width:1025px) {
+	/* big landscape tablets, laptops, and desktops */
+	.tshirt-design{
+		min-height:50px;
+		min-width:40px;
+		font-size:1rem;
+	}
+	.btn-tshirt-color{
+		border-radius:50% !important;
+		margin-right:5px !important;
+		font-size:1rem;
+	}
+	#tshirt-text{
+		font-size:1rem;
+	}
+	.btn-font-color{
+		border-radius:100% !important;
+		font-size: 1rem;
+	}
+	.btn-font-family{
+		font-size: 1rem;
+	}
+}
+@media (min-width:1281px) {
+	/* hi-res laptops and desktops */
+	.tshirt-design{
+		min-height:50px;
+		min-width:40px;
+		font-size:1rem;
+	}
+	.btn-tshirt-color{
+		border-radius:50% !important;
+		margin-right:5px !important;
+		font-size:1rem;
+	}
+	#tshirt-text{
+		font-size:1rem;
+	}
+	.btn-font-color{
+		border-radius:100% !important;
+		font-size: 1rem;
+	}
+	.btn-font-family{
+		font-size: 1rem;
+	}
 }
