@@ -288,11 +288,25 @@ function updateTextFont(family){
 function getFile(){
 	document.getElementById("tshirt-custompicture").click();
 }
-
+$('input[id="quantity"]').keyup(function(e){
+	  if (/\D/g.test(this.value))
+	  {
+		// Filter non-digits from input value.
+		this.value = this.value.replace(/\D/g, '');
+		if(this.value == "" || this.value == null){
+			this.value = 1;
+		}
+	  }
+if(this.value == "" || this.value == null){}else{
+document.getElementById("product_price").innerHTML=parseInt(product_price * this.value);
+document.getElementById("discount").innerHTML="-"+parseInt(product_price * this.value / 100 * discount);
+document.getElementById("total_price").innerHTML=parseInt(product_price * this.value - parseInt(product_price * this.value / 100 * discount));
+}
+	});
 function numberValueChange(quantity){
-document.getElementById("product_price").innerHTML=parseInt(product_price * quantity.value);
-document.getElementById("discount").innerHTML="-"+parseInt(product_price * quantity.value / 100 * discount);
-document.getElementById("total_price").innerHTML=parseInt(product_price * quantity.value - parseInt(product_price * quantity.value / 100 * discount));
+//document.getElementById("product_price").innerHTML=parseInt(product_price * quantity.value);
+//document.getElementById("discount").innerHTML="-"+parseInt(product_price * quantity.value / 100 * discount);
+//document.getElementById("total_price").innerHTML=parseInt(product_price * quantity.value - parseInt(product_price * quantity.value / 100 * discount));
 }
 function ajaxBtnColourButtons(){
 $(".btn-tshirt-color").remove();
